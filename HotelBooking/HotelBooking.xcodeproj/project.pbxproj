@@ -23,6 +23,7 @@
 		BACAB15D2AA34761006F4607 /* MainData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACAB15C2AA34761006F4607 /* MainData.swift */; };
 		BACAB15F2AA36B72006F4607 /* Conveniences.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACAB15E2AA36B72006F4607 /* Conveniences.swift */; };
 		BACAB1612AA36BEA006F4607 /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACAB1602AA36BEA006F4607 /* Description.swift */; };
+		BACAB1632AA5CED8006F4607 /* Peculiarities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACAB1622AA5CED8006F4607 /* Peculiarities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		BACAB15C2AA34761006F4607 /* MainData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainData.swift; sourceTree = "<group>"; };
 		BACAB15E2AA36B72006F4607 /* Conveniences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conveniences.swift; sourceTree = "<group>"; };
 		BACAB1602AA36BEA006F4607 /* Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Description.swift; sourceTree = "<group>"; };
+		BACAB1622AA5CED8006F4607 /* Peculiarities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peculiarities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 				BACAB15C2AA34761006F4607 /* MainData.swift */,
 				BACAB15E2AA36B72006F4607 /* Conveniences.swift */,
 				BACAB1602AA36BEA006F4607 /* Description.swift */,
+				BACAB1622AA5CED8006F4607 /* Peculiarities.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 			files = (
 				BACAB15B2AA33703006F4607 /* BottomPanel.swift in Sources */,
 				BACAB1342AA1CB7A006F4607 /* ContentView.swift in Sources */,
+				BACAB1632AA5CED8006F4607 /* Peculiarities.swift in Sources */,
 				BACAB1442AA1D148006F4607 /* CoordinatorObject.swift in Sources */,
 				BACAB15F2AA36B72006F4607 /* Conveniences.swift in Sources */,
 				BACAB1532AA1D89F006F4607 /* HotelViewModel.swift in Sources */,

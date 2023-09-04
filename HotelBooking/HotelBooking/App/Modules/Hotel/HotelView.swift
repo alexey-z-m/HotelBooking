@@ -42,8 +42,7 @@ struct HotelView: View {
                             .padding(16)
                         Spacer()
                     }
-                    // peculiarities
-
+                    Peculiarities()
                     Description()
                     Conveniences()
                 }
