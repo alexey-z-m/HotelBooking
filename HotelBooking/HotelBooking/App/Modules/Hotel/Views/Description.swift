@@ -13,7 +13,7 @@ struct Description: View {
             Text("Отель VIP-класса с собственными гольф полями. Высокий уровнь сервиса. Рекомендуем для респектабельного отдыха. Отель принимает гостей от 18 лет!")
                 .multilineTextAlignment(.leading)
                 .foregroundColor(.black.opacity(0.9))
-                .font(.system(size: 16))
+                .font(Font.custom("SF Pro Display", size: 16))
                 .padding([.leading, .bottom, .trailing], 16)
             Spacer()
         }
