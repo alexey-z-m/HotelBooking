@@ -17,9 +17,9 @@ struct Conveniences: View {
                     .padding(12)
                 VStack(alignment: .leading) {
                     Text("Удобства")
-                        .font(.system(size: 16, weight: .medium))
+                        .font(Font.custom("SF Pro Display", size: 16).weight(.medium))
                     Text("Самое необходимое")
-                        .font(.system(size: 14, weight: .medium))
+                        .font(Font.custom("SF Pro Display", size: 14).weight(.medium))
                         .foregroundColor(Color(red: 0.51, green: 0.53, blue: 0.59))
                 }
                 Spacer()
@@ -36,9 +36,9 @@ struct Conveniences: View {
                     .padding(12)
                 VStack(alignment: .leading) {
                     Text("Что включено")
-                        .font(.system(size: 16, weight: .medium))
+                        .font(Font.custom("SF Pro Display", size: 16).weight(.medium))
                     Text("Самое необходимое")
-                        .font(.system(size: 14, weight: .medium))
+                        .font(Font.custom("SF Pro Display", size: 14).weight(.medium))
                         .foregroundColor(Color(red: 0.51, green: 0.53, blue: 0.59))
                 }
                 Spacer()
@@ -55,9 +55,9 @@ struct Conveniences: View {
                     .padding(12)
                 VStack(alignment: .leading) {
                     Text("Что не включено")
-                        .font(.system(size: 16, weight: .medium))
+                        .font(Font.custom("SF Pro Display", size: 16).weight(.medium))
                     Text("Самое необходимое")
-                        .font(.system(size: 14, weight: .medium))
+                        .font(Font.custom("SF Pro Display", size: 14).weight(.medium))
                         .foregroundColor(Color(red: 0.51, green: 0.53, blue: 0.59))
                 }
 

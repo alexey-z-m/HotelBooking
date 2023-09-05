@@ -21,7 +21,7 @@ struct CoordinatorView: View {
             case .hotel:
                 HotelView(viewModel: HotelViewModel(coordinator: CoordinatorObject()))
             case .room:
-                RoomView()
+                RoomView(viewModel: RoomViewModel())
             case .booking:
                 BookingView()
             case .paid:

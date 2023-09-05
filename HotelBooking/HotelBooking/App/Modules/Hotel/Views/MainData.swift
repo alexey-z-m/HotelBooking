@@ -13,7 +13,7 @@ struct MainData: View {
             HStack {
                 Button {} label: {
                     Text("★ 5 Превосходно")
-                        .font(.system(size: 17, weight: .medium))
+                        .font(Font.custom("SF Pro Display", size: 17).weight(.medium))
                         .foregroundColor(Color(red: 1, green: 0.66, blue: 0))
                         .padding([.leading, .trailing], 10)
                         .padding([.top, .bottom], 5)
@@ -30,7 +30,7 @@ struct MainData: View {
                 Text("Steigenberger Makadi")
                     .multilineTextAlignment(.leading)
                     .foregroundColor(.black)
-                    .font(.system(size: 22, weight: .medium))
+                    .font(Font.custom("SF Pro Display", size: 22).weight(.medium))
                     .padding(.leading, 16)
                 Spacer()
             }
@@ -38,14 +38,15 @@ struct MainData: View {
                 Button{} label: {
                     Text("Madinat Makadi, Safaga Road, Makadi Bay, Египет")
                         .multilineTextAlignment(.leading)
-                        .font(.system(size: 14, weight: .medium))
+                        .font(Font.custom("SF Pro Display", size: 14).weight(.medium))
                         .padding(.leading, 16)
                 }
                 Spacer()
             }
             HStack {
                 Text("от 134 673 ₽")
-                    .font(.system(size: 30, weight: .medium))
+                    //.font(.system(size: 30, weight: .medium))
+                    .font(Font.custom("SF Pro Display", size: 30).weight(.semibold))
                     .foregroundColor(.black)
                     .padding(.leading, 16)
                 Text("за тур с перелетом")

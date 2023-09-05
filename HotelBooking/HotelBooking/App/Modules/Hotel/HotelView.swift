@@ -21,7 +21,7 @@ struct HotelView: View {
             ScrollView {
                 VStack {
                     Text("Отель")
-                        .font(.system(size: 18, weight: .medium))
+                        .font(Font.custom("SF Pro Display", size: 18).weight(.medium))
                         .foregroundColor(.black)
                         .padding(8)
                     ImageCorusel()
@@ -38,11 +38,11 @@ struct HotelView: View {
                         Text("Об отеле")
                             .multilineTextAlignment(.leading)
                             .foregroundColor(.black)
-                            .font(.system(size: 22, weight: .medium))
+                            .font(Font.custom("SF Pro Display", size: 22).weight(.medium))
                             .padding(16)
                         Spacer()
                     }
-                    Peculiarities()
+                    Peculiarities(tags: ["3-я линия", "Платный Wi-Fi в фойе", "30 км до аэропорта", "1 км до пляжа"])
                     Description()
                     Conveniences()
                 }

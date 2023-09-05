@@ -7,14 +7,10 @@
 
 import SwiftUI
 
-struct RoomViewModel: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+class RoomViewModel: ObservableObject {
+    var rooms: [Room] = [Room(name: "1"),Room(name: "2")]
 }
-
-struct RoomViewModel_Previews: PreviewProvider {
-    static var previews: some View {
-        RoomViewModel()
-    }
+struct Room: Identifiable {
+    let id: UUID = UUID()
+    let name: String
 }
