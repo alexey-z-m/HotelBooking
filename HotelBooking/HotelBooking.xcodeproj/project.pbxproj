@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		BA9B572D2AA762AE00A24C7C /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BA9B572C2AA762AE00A24C7C /* SF-Pro-Display-Regular.otf */; };
 		BA9B572F2AA770F600A24C7C /* BuyerInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9B572E2AA770F600A24C7C /* BuyerInformationView.swift */; };
+		BAA6B0552AA8AFFE0085BF41 /* TouristView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA6B0542AA8AFFE0085BF41 /* TouristView.swift */; };
+		BAA6B0572AA8B51C0085BF41 /* BookingSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA6B0562AA8B51B0085BF41 /* BookingSummaryView.swift */; };
 		BAAB50222AA7569200EC3817 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAAB50212AA7569200EC3817 /* Assets.xcassets */; };
 		BAAB50242AA757F000EC3817 /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = BAAB50232AA756BF00EC3817 /* SF-Pro-Display-Medium.otf */; };
 		BAAB50282AA75A2B00EC3817 /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BAAB50272AA7599F00EC3817 /* SF-Pro-Display-Semibold.otf */; };
@@ -38,6 +40,8 @@
 /* Begin PBXFileReference section */
 		BA9B572C2AA762AE00A24C7C /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
 		BA9B572E2AA770F600A24C7C /* BuyerInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyerInformationView.swift; sourceTree = "<group>"; };
+		BAA6B0542AA8AFFE0085BF41 /* TouristView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouristView.swift; sourceTree = "<group>"; };
+		BAA6B0562AA8B51B0085BF41 /* BookingSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingSummaryView.swift; sourceTree = "<group>"; };
 		BAAB50212AA7569200EC3817 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAAB50232AA756BF00EC3817 /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
 		BAAB50252AA7588D00EC3817 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -204,7 +208,6 @@
 			isa = PBXGroup;
 			children = (
 				BACAB1582AA334FC006F4607 /* ImageCorusel.swift */,
-				BACAB15A2AA33703006F4607 /* BottomPanel.swift */,
 				BACAB15C2AA34761006F4607 /* MainData.swift */,
 				BACAB15E2AA36B72006F4607 /* Conveniences.swift */,
 				BACAB1602AA36BEA006F4607 /* Description.swift */,
@@ -225,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				BACAB16A2AA715BE006F4607 /* ButtonView.swift */,
+				BACAB15A2AA33703006F4607 /* BottomPanel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -235,6 +239,8 @@
 				BACAB16C2AA71F96006F4607 /* DetailRow.swift */,
 				BACAB16F2AA72274006F4607 /* BookingDetailMainView.swift */,
 				BA9B572E2AA770F600A24C7C /* BuyerInformationView.swift */,
+				BAA6B0542AA8AFFE0085BF41 /* TouristView.swift */,
+				BAA6B0562AA8B51B0085BF41 /* BookingSummaryView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -319,10 +325,12 @@
 				BACAB1682AA61A4C006F4607 /* RoomData.swift in Sources */,
 				BACAB1442AA1D148006F4607 /* CoordinatorObject.swift in Sources */,
 				BACAB15F2AA36B72006F4607 /* Conveniences.swift in Sources */,
+				BAA6B0552AA8AFFE0085BF41 /* TouristView.swift in Sources */,
 				BACAB1532AA1D89F006F4607 /* HotelViewModel.swift in Sources */,
 				BA9B572F2AA770F600A24C7C /* BuyerInformationView.swift in Sources */,
 				BACAB16B2AA715BE006F4607 /* ButtonView.swift in Sources */,
 				BACAB15D2AA34761006F4607 /* MainData.swift in Sources */,
+				BAA6B0572AA8B51C0085BF41 /* BookingSummaryView.swift in Sources */,
 				BACAB1652AA5D7D6006F4607 /* RoomViewModel.swift in Sources */,
 				BACAB1592AA334FC006F4607 /* ImageCorusel.swift in Sources */,
 				BACAB1512AA1D586006F4607 /* PaidView.swift in Sources */,

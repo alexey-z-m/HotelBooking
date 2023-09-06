@@ -26,8 +26,8 @@ struct BottomPanel: View {
     }
 }
 
-        struct BottomPanel_Previews: PreviewProvider {
-            static var previews: some View {
-                BottomPanel()
-            }
-        }
+struct BottomPanel_Previews: PreviewProvider {
+    static var previews: some View {
+        BottomPanel()
+    }
+}

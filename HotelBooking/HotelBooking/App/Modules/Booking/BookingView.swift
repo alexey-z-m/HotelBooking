@@ -30,44 +30,25 @@ struct BookingView: View {
                 .cornerRadius(15)
 
                 BuyerInformationView()
+                TouristView()
 
                 VStack(alignment: .leading, spacing: 16) {
                     HStack {
-                        Text("Первый турист")
+                        Text("Добавить туриста")
                             .font(Font.custom("SF Pro Display", size: 22).weight(.medium))
                         Spacer()
                         Button {} label: {
                             ZStack{
-                                Image(systemName: "chevron.up")
-                                    .foregroundColor(.blue)
-                                    .bold()
                                 Rectangle()
                                     .frame(width: 32, height: 32)
-                                    .foregroundColor(Color(red: 0.05, green: 0.45, blue: 1).opacity(0.1))
+                                    .foregroundColor(.blue)
                                     .cornerRadius(6)
+                                Image(systemName: "plus")
+                                    .foregroundColor(.white)
+                                    .bold()
                             }
                         }
-                        .padding(.trailing, 16)
                     }
-                    .padding(.leading, 16)
-
-                    VStack(alignment: .leading){
-                        Text("Имя")
-                            .font(Font.custom("SF Pro Display", size: 12))
-                            .kerning(0.12)
-                            .foregroundColor(Color(red: 0.66, green: 0.67, blue: 0.72))
-                            .padding(.top, 10)
-                            .padding(.leading, 16)
-                        TextField("Введите имя", text: $phone)
-                            .font(Font.custom("SF Pro Display", size: 16).weight(.regular))
-                            .kerning(0.75)
-                            .foregroundColor(Color(red: 0.08, green: 0.08, blue: 0.17))
-                            .padding(.top, -10)
-                            .padding([.leading,.trailing], 16)
-                            .padding(.bottom, 16)
-                    }
-                    .background(Color(red: 0.96, green: 0.96, blue: 0.98))
-                    .cornerRadius(10)
                     .padding([.leading, .trailing], 16)
                 }
                 .padding(.top, 16)
@@ -75,7 +56,65 @@ struct BookingView: View {
                 .frame(width: UIScreen.main.bounds.size.width)
                 .background(.white)
                 .cornerRadius(15)
+
+                VStack(alignment: .leading, spacing: 16) {
+                    HStack {
+                        Text("Тур")
+                            .font(Font.custom("SF Pro Display", size: 16))
+                            .foregroundColor(Color(red: 0.51, green: 0.53, blue: 0.59))
+                        Spacer()
+                        Text("186 600 ₽")
+                            .font(Font.custom("SF Pro Display", size: 16))
+                            .multilineTextAlignment(.trailing)
+                            .foregroundColor(.black)
+                            .frame(width: 132, alignment: .topTrailing)
+                    }
+                    .padding([.leading, .trailing], 16)
+                    HStack {
+                        Text("Топливный сбор")
+                            .font(Font.custom("SF Pro Display", size: 16))
+                            .foregroundColor(Color(red: 0.51, green: 0.53, blue: 0.59))
+                        Spacer()
+                        Text("9 300 ₽")
+                            .font(Font.custom("SF Pro Display", size: 16))
+                            .multilineTextAlignment(.trailing)
+                            .foregroundColor(.black)
+                            .frame(width: 132, alignment: .topTrailing)
+                    }
+                    .padding([.leading, .trailing], 16)
+                    HStack {
+                        Text("Сервисный сбор")
+                            .font(Font.custom("SF Pro Display", size: 16))
+                            .foregroundColor(Color(red: 0.51, green: 0.53, blue: 0.59))
+                        Spacer()
+                        Text("2 136 ₽")
+                            .font(Font.custom("SF Pro Display", size: 16))
+                            .multilineTextAlignment(.trailing)
+                            .foregroundColor(.black)
+                            .frame(width: 132, alignment: .topTrailing)
+                    }
+                    .padding([.leading, .trailing], 16)
+                    HStack {
+                        Text("К оплате")
+                            .font(Font.custom("SF Pro Display", size: 16))
+                            .foregroundColor(Color(red: 0.51, green: 0.53, blue: 0.59))
+                        Spacer()
+                        Text("198 036 ₽")
+                            .font(Font.custom("SF Pro Display", size: 16).weight(.semibold))
+                            .multilineTextAlignment(.trailing)
+                            .foregroundColor(.blue)
+                            .frame(width: 132, alignment: .topTrailing)
+                    }
+                    .padding([.leading, .trailing], 16)
+                }
+                .padding(.top, 16)
+                .padding(.bottom, 16)
+                .frame(width: UIScreen.main.bounds.size.width)
+                .background(.white)
+                .cornerRadius(15)
+                
             }
+            .padding(.bottom, 8)
             .background(Color(red: 0.96, green: 0.96, blue: 0.98))
             .navigationBarBackButtonHidden()
             .navigationBarTitleDisplayMode(.inline)
@@ -93,6 +132,7 @@ struct BookingView: View {
                     }
                 }
             }
+            BottomPanel()
         }
     }
 }
