@@ -19,7 +19,7 @@ struct CoordinatorView: View {
         VStack {
             switch object.currentState {
             case .hotel:
-                HotelView(viewModel: HotelViewModel(coordinator: CoordinatorObject()))
+                HotelView(viewModel: HotelViewModel())
             case .room:
                 RoomView(viewModel: RoomViewModel())
             case .booking:

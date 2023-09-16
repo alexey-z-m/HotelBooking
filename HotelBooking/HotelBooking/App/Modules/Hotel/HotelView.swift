@@ -19,6 +19,7 @@ struct HotelView: View {
     var body: some View {
         NavigationStack {
             ScrollView {
+
                 VStack {
                     Text("Отель")
                         .font(Font.custom("SF Pro Display", size: 18).weight(.medium))
@@ -32,7 +33,13 @@ struct HotelView: View {
                 .frame(width: UIScreen.main.bounds.size.width)
                 .background(.white)
                 .cornerRadius(15)
-
+                Button{
+                    Task{
+                        await viewModel.getModelHotel()
+                    }
+                } label: {
+                    Text("data")
+                }
                 VStack {
                     HStack {
                         Text("Об отеле")
@@ -62,6 +69,6 @@ struct HotelView: View {
 
 struct HotelView_Previews: PreviewProvider {
     static var previews: some View {
-        HotelView(viewModel: HotelViewModel(coordinator: CoordinatorObject()))
+        HotelView(viewModel: HotelViewModel())
     }
 }
