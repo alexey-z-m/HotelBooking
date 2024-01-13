@@ -9,12 +9,12 @@ import SwiftUI
 
 struct HotelView: View {
 
-    @ObservedObject var viewModel: HotelViewModel
+    //@ObservedObject var viewModel: HotelViewModel
 
-    init(viewModel: HotelViewModel) {
-        self.viewModel = viewModel
-        UIScrollView.appearance().bounces = false
-    }
+//    init(viewModel: HotelViewModel) {
+//        self.viewModel = viewModel
+//        UIScrollView.appearance().bounces = false
+//    }
 
     var body: some View {
         NavigationStack {
@@ -34,9 +34,9 @@ struct HotelView: View {
                 .background(.white)
                 .cornerRadius(15)
                 Button{
-                    Task{
-                        await viewModel.getModelHotel()
-                    }
+//                    Task{
+//                        await viewModel.getModelHotel()
+//                    }
                 } label: {
                     Text("data")
                 }
@@ -69,6 +69,6 @@ struct HotelView: View {
 
 struct HotelView_Previews: PreviewProvider {
     static var previews: some View {
-        HotelView(viewModel: HotelViewModel())
+        HotelView() //viewModel: HotelViewModel()
     }
 }
